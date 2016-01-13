@@ -1,0 +1,335 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name = "viewport" content = "user-scalable=no, width=device-width">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+        <link href="css/index.html.css" rel="stylesheet" type="text/css">
+
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+        <script type="text/javascript" src="js/popup.js"></script>
+        <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Skranji:400,700|Oxygen:400,700">
+
+        <link href="css/my_css.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="navbar-header logo_button">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="images\logo.png">
+            </div>
+            <div class="leng_phone_block">
+                <div class="hidden-sm hidden-xs text-right lang_selector">
+                    <a href="#">en</a> |
+                    <a class="active_lang_selector" href="#">рус</a>
+                </div>
+                <div class="hidden-sm hidden-xs text-right phone_contact">
+                    <p>+38(097)324-98-09</p>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse " id="navbar-ex-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="#">О ПРОЕКТЕ</a>
+                    </li>
+                    <li>
+                        <a href="#">РАСПОЛОЖЕНИЕ</a>
+                    </li>
+                    <li>
+                        <a href="#">КВАРТИРЫ</a>
+                    </li>
+                    <li>
+                        <a href="#">ДИЗАЙН</a>
+                    </li>
+                    <li>
+                        <a href="#">ПРЕИМУЩЕСТВА</a>
+                    </li>
+                    <li>
+                        <a href="#">НОВОСТИ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel slide" id="carousel-example" data-interval="false" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="background_field">
+                    <h1 class="text-center headline_carousel">Атмосфера загородного дома в престижном районе</h1>
+                </div>
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="item active">
+                    <img src="images\photo1.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="images\photo2.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="images\photo3.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example" data-slide="prev"><i class="icon-prev  fa fa-angle-left"></i></a>
+            <a class="right carousel-control" href="#carousel-example" data-slide="next"><i class="icon-next fa fa-angle-right"></i></a>
+        </div>
+
+        <button id="contact_button" onClick="showPopup();">СВЯЗАТЬСЯ</button>
+        <div class="popup">
+            <div class="popup_bg"></div>
+            <div class="form">
+                <div class="ic_close"><a href="#contents"><img src="images/ic_close.png" height="15" width="18"></a></div>
+                <h1 class="headline_form">ФОРМА ДЛЯ ЗАПОЛНЕНИЯ</h1>
+                <form>
+                    <input  type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Имя" required>
+                    <input type="text" name="phone" id="phone" class="txt" tabindex="2" placeholder="Телефон" required>
+                    <input type="email" name="email" id="email" class="txt" tabindex="3" placeholder="E-mail" required>
+                    <textarea name="message" id="message" class="txtarea" tabindex="4" placeholder="Текст" required></textarea>
+                    <div class="check1"><input type="checkbox" name="checkbox_form" checked="checked" id="check"> <label for="check">подписаться на рассылку</label></div>
+                    <input type="submit" id="submitbtn" name="submitbtn" tabindex="5" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="about_proj">
+            <div class="container">
+    			<h2 class="text-center my_headline">О ПРОЕКТЕ</h2>
+    			<div class="col-md-6 col-sm-6">
+    				<img src="images\photo4.jpg" class="img-responsive">
+    			</div>
+    			<div class="col-md-6 col-sm-6 paragraph1">
+    				<p>Премиальная недвижимость стала инструментом конвертации денег. К такому выводу пришли специалисты Kalinka Group, подводя итоги очередного этапа развития рынка элитной недвижимости на пресс-конференции, прошедшей 14 апреля в ресторане Nabi.<br>Эксперты отмечают, что гибкость в кризис помогает девелоперам создавать уникальный востребованный продукт: "Когда мы начали работать над проектом два года назад, коллеги порекомендовали обратить внимание на увеличение спроса на жилье.</p>
+    			    <a class="btn btn-primary">подробнее</a>
+    			</div>
+        	</div>
+        </div>
+
+    	<div class="clearout"></div>
+        <div class="container">
+            <h2 class="text-center my_headline">ВЫБЕРИТЕ СВОЮ КВАРТИРУ</h2>
+                <ul id="flexiselDemo">
+                    <li><img src="images/picture1.jpg" /></li>
+                    <li><img src="images/picture2.jpg" /></li>
+                    <li><img src="images/picture3.jpg" /></li>
+                    <li><img src="images/picture4.jpg" /></li>
+                </ul>
+        </div>
+
+        <div class="table_block">
+            <div class="container">
+                <h2 class="text-center my_headline">ТАБЛИЦА</h2>
+                <div class="col-md-12">
+                    <table class="table table-bordered my_table">
+                        <thead>
+                            <tr>
+                              <th class="table_head_align">Проекты</th>
+                              <th class="table_head_align">Текст</th>
+                              <th class="table_head_align">Текст</th>
+                              <th class="table_head_align">Текст</th>
+                              <th class="table_head_align">Текст</th>
+                              <th class="table_head_align">Текст</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Проект</td>
+                              <td rowspan="7">Текст</td>
+                              <td>Текст</td>
+                              <td rowspan="2">Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td rowspan="2">Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td rowspan="2">Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                            <tr>
+                              <td>Проект</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                              <td>Текст</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="bid">
+            <div class="container">
+                <div class="form-style">
+                    <form>
+                        <h2 class="text-center headline_bid">ОТПРАВИТЬ ЗАЯВКУ НА ПРОЕКТ</h2>
+                        <input type="text" name="field1" placeholder="Имя" />
+                        <input type="tel" name="field2" placeholder="Телефон" />
+                        <input type="email" name="field2" placeholder="E-mail" />
+                        <table class="checkbox_variant">
+                            <tr valign="top">
+                                <td rowspan="2">Выбрать:</td>
+                                <td class="marg"><input type="radio" checked="checked" name="version" id="version1"/><label for="version1" class="change_font_weight">1 вариант</label></td>
+                            </tr>
+                            <tr>
+                                <td class="marg"><input type="radio" name="version" id="version2"/><label for="version2" class="change_font_weight">2 вариант</label></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <select name="town">
+                            <option value="gorod">Город</option>
+                            <option value="kyiv">Киев</option>
+                            <option value="lviv">Львов</option>
+                            <option value="odesa">Одесса</option>
+                            <option value="harkiv">Харьков</option>
+                        </select>
+                        <br>
+                        <table class="checkbox_variant">
+                            <tr valign="top">
+                                <td rowspan="3">Выбрать:</td>
+                                <td class="marg"><input type="checkbox" name="variant1" checked="checked"><span>1 вариант</span></td>
+                            </tr>
+                            <tr>
+                                <td class="marg"><input type="checkbox" name="variant2"><span>2 вариант</span></td>
+                            </tr>
+                            <tr>
+                                <td class="marg"><input type="checkbox" name="variant3"><span>3 вариант</span></td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="submit" value="ОТПРАВИТЬ ЗАЯВКУ" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container change_container1">
+                <h2 class="text-center my_headline_footer">КОНТАКТЫ</h2>
+                <div class="footer_block">
+                    <div class="col-md-2 inl"></div>
+                    <div class="col-md-2 inl">
+                        <div id="pac"><img src="images\form2.png"></div>
+                        <div id="text1">СВЯЗАТЬСЯ</div>
+                        <p>+380 44 222 88 44</p>
+                        <p>+380 67 555 55 15</p>
+                        <p>office@build.com.ua</p>
+                    </div>
+                    <div class="col-md-4 adress_block inl">
+                        <div id="pic"><img src="images\form2.png"></div>
+                        <div id="text">АДРЕСС</div>
+                        <p>03035, Украина, Киев</p>
+                        <p>ул. Мехнизаторов 3, офис 310</p>
+                    </div>
+                    <div class="col-md-2 inl">
+                        <div id="poc"><img src="images\form2.png"></div>
+                        <div id="text2">ДЛЯ ПРЕССЫ</div>
+                        <p>+380 93 997 38 73</p>
+                        <p>g@build.com.ua</p>
+                        <p>office@build.com.ua</p>
+                    </div>
+                    <div class="col-md-2 inl"></div>
+                </div>
+            </div>
+
+            <div class="change_container2">
+                <h2 class="text-center my_headline_footer">КОНТАКТЫ</h2>
+                <div class="text-center change_container_phone">
+                    <p>+380 44 222 88 44</p>
+                    <p>+380 67 555 55 15</p>
+                </div>
+                <div class="text-center change_container_address">
+                    <p>03035, Украина, Киев</p>
+                    <p>ул. Мехнизаторов 3, офис 310</p>
+                </div>
+            </div>
+
+            <div class="social">
+                    <a><img class="social_img" src="images/facebook1.png" href="#"></a>
+                    <a><img class="social_img" src="images/twitter1.png" href="#"></a>
+                    <a><img class="social_img" src="images/linkedin1.png" href="#"></a>
+            </div>
+        </div>
+
+        <div class="developers_block">
+            <div class="developers">© 2015 J. HORNIG GMBH</div>
+        </div>
+
+
+    <script type="text/javascript">
+        $(window).load(function() {
+		    $("#flexiselDemo").flexisel({
+		        visibleItems: 4,
+		        animationSpeed: 1000,
+		        autoPlay: true,
+		        autoPlaySpeed: 4000,            
+		        pauseOnHover: true,
+		        enableResponsiveBreakpoints: true,
+		        responsiveBreakpoints: { 
+		            portrait: { 
+		                changePoint:480,
+		                visibleItems: 1
+		            }, 
+		            landscape: { 
+		                changePoint:640,
+		                visibleItems: 2
+		            },
+		            tablet: { 
+		                changePoint:768,
+		                visibleItems: 3
+		            }
+		        }
+		    });
+		});
+	</script>
+
+	 </body>
+ </html>
